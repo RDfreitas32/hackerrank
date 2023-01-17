@@ -20,7 +20,6 @@ process.stdin.on('end', function() {
 function readLine() {
     return inputString[currentLine++];
 }
-// Função implementada no desafio ploomers
 function stairCase(n) {
     for(let i=1; i<=n; i++) 
     console.log(' '.repeat(n-i)+'#'.repeat(i));
@@ -30,5 +29,5 @@ function stairCase(n) {
 function main() {
     const n = parseInt(readLine().trim(), 10);
 
-    staircase(n);
+    stairCase(n);
 }
