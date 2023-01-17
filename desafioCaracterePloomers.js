@@ -30,9 +30,9 @@ function alternate(s) {
     
     for (let i = 0; i < palavraLetras.length; i++) {
         for (let j = i + 1; j < palavraLetras.length; j++) {
-            const str = palavraLetras[i] + '|' + palavraLetras[j];
-            const pattern = new RegExp(str, 'g');
-            stringInicial.push(s.match(pattern));
+            const frase = palavraLetras[i] + '|' + palavraLetras[j];
+            const pad = new RegExp(frase, 'g');
+            stringInicial.push(s.match(pad));
         }
     }
  
